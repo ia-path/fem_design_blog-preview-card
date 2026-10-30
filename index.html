@@ -5,18 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Blog preview card</title>
 </head>
 
 <body>
-  <main>
-    <article>
-      <h1>Learning</h1>
-      <span>Published 21 Dec 2023</span>
-      <a href="">HTML & CSS foundations</a>
-      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
-      <span>Greg Hooper</span>
-    </article>
+  <main class="main-container">
+    <img src="assets/images/illustration-article.svg" alt="">
+    <section class="main-content">
+      <p class="main-content__learning">Learning</p>
+      <span class="main-content__date">Published 21 Dec 2023</span>
+      <a href="" class="main-content__title">HTML & CSS foundations</a>
+      <p class="main-content-description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    </section>
+    <section class="profile-card">
+      <img src="assets/images/image-avatar.webp" alt="" class="profile-card__avatar">
+      <span class="profile-card__name">Greg Hooper</span>
+    </section>
   </main>
 </body>
 
