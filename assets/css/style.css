@@ -22,6 +22,7 @@ body {
     align-items: center;
     background-color: var(--yellow);
     font-family: "Figtree", sans-serif;
+    line-height: 150%;
     font-optical-sizing: auto;
 }
 
@@ -53,24 +54,21 @@ p.main-content__learning {
     border-radius: 4px;
     display: inline-block;
     font-weight: 800;
-    font-size: 14px;
-    line-height: 150%;
+    font-size: 12px;
     margin-bottom: 12px;
 }
 
 span.main-content__date {
     font-weight: 500;
     margin-bottom: 12px;
-    font-size: 14px;
-    line-height: 150%;
+    font-size: 12px;
 }
 
 a.main-content__title {
     text-decoration: none;
     color: var(--gray950);
     margin-bottom: 12px;
-    font-size: 24px;
-    line-height: 150%;
+    font-size: 20px;
     font-weight: 800;
     letter-spacing: 0;
 }
@@ -82,8 +80,7 @@ a.main-content__title:hover {
 
 p.main-content-description {
     color: var(--gray500);
-    font-size: 14px;
-    line-height: 150%;
+    font-size: 12px;
     margin-bottom: 24px;
     font-weight: 500;
 }
@@ -103,11 +100,10 @@ span.profile-card__name {
     font-weight: 800;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
     main.main-container {
-        width: 280px;
-        height: 501px;
-        transition: 0.5s;
+        width: 288px;
+        height: auto;
     }
 }
 
@@ -116,10 +112,17 @@ span.profile-card__name {
     main.main-container {
         width: 384px;
         height: 522px;
-        transition: 0.5s;
+    }
+
+    p.main-content__learning, span.main-content__date {
+        font-size: 14px;
+    }
+
+    a.main-content__title {
+        font-size: 24px;
     }
 
     p.main-content-description {
-        font-size: 1.0rem;
+        font-size: 16px;
     }
 }
